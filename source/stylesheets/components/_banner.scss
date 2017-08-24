@@ -1,0 +1,48 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  .presentation {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // background: rgba(0, 0, 0, 0.3);
+    // border: 1px solid rgba(0,0,0,0.1);
+    // border-radius: 5px;
+    // padding: 17px 43px;
+    // position: fixed;
+    position: absolute;
+    top: 18vh;
+  }
+  h1 {
+    font-size: 4em;
+    font-weight: 300;
+    // letter-spacing: 0.055em;
+    padding-bottom: 11px;
+    border-bottom: 1px solid #FFFFFF;
+    border-bottom-color: rgba(255,255,255,0.35);
+    // z-index: 2;
+  }
+  p {
+    font-size: 2em;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+    // margin-bottom: 15px;
+    // z-index: 2;
+  }
+  .glyphicon-chevron-down {
+    color: #42F2F7;
+    // margin-left: 2em;
+    // font-size: 27px;
+    // position: absolute;
+    // top: 62vh;
+    // z-index: 2;
+  }
+}
