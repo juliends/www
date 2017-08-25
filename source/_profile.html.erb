@@ -1,41 +1,45 @@
 <div class="wrapper-white">
   <div class="container">
-    <div class="profile padded" id="1">
-      <div class="centered-sentences">    
-        <h2>Profile</h2>
-        <h6>I'm a creative Ruby on Rails developper </h6>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="centered-sentences">    
+          <h2>Profile</h2>
+          <h6>I'm a creative Ruby on Rails developper </h6>
+        </div>
+        <!-- <hr> -->
       </div>
-        <hr>
-      <div class="row">
-        <div class="col-xs-12 col-md-4">
-          <div class="flex-center">
-            <div class="about-me">
-              <h3>About me</h3>
-              <p>I started to learn how to code after 8 years of tech experience in the Cinema industry. I wanted to know how the products I love are made and be able to prototype and work in team with other developpers. I joined Le Wagon bootcamp in Paris, I am now focused on improving my skills.</p>
+      <div class="profile padded" id="1">
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <div class="flex-center">
+              <div class="about-me">
+                <h3>About me</h3>
+                <p>I started to learn how to code after 8 years of tech experience in the Cinema industry. I wanted to know how the products I love are made and be able to prototype and work in team with other developpers. I joined Le Wagon bootcamp in Paris, I am now focused on improving my skills.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="flex-center">
+              <div class="avatar">
+                <%= image_tag "avatar.jpg", class: "avatar-large" %>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div id="unflex-mobile">
+              <div class="details">
+                <h3>Details</h3>
+                <p><strong>Name:</strong></p>
+                <p>Julien Da Silva</p>
+                <p><strong>Age:</strong></p>
+                <p>30</p>
+                <p><strong>Location:</strong></p>
+                <p>Paris, France</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-md-4">
-          <div class="flex-center">
-            <div class="avatar">
-              <%= image_tag "avatar.jpg", class: "avatar-large" %>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-md-4">
-          <div id="unflex-mobile">
-            <div class="details">
-              <h3>Details</h3>
-              <p><strong>Name:</strong></p>
-              <p>Julien Da Silva</p>
-              <p><strong>Age:</strong></p>
-              <p>30</p>
-              <p><strong>Location:</strong></p>
-              <p>Paris, France</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      </div>     
     </div>
   </div>
 </div>
