@@ -1,27 +1,4 @@
-.centered-sentences {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid rgba(114, 120, 120, 0.2);
-  padding-bottom: 1em;
-  h2 {
-    letter-spacing: 0.04em;
-    font-weight: 300;
-    color: #22A39F;
-  }
-   h6 {
-    font-weight: 300;
-    color: #727878;
-    font-size: 20px;
-  }
-}
 .profile {
-  padding-top: 2em;
-  h4{
-    font-weight: 300;
-    color: #22A39F;
-  }
   p {
     font-weight: 300;
     font-size: 15px;
