@@ -1,24 +1,10 @@
-.avatar {
-  height: 270px;
-  width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .avatar-large {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-  }
-}
-
 .centered-sentences {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid rgba(114, 120, 120, 0.2);
-  padding: 1em;
+  padding-bottom: 1em;
   h2 {
     letter-spacing: 0.04em;
     font-weight: 300;
@@ -30,19 +16,50 @@
     font-size: 20px;
   }
 }
-.profile p {
-  font-weight: 300;
-  font-size: 15px;
-  color: #434242;
+.profile {
+  padding-top: 2em;
+  h4{
+    font-weight: 300;
+    color: #22A39F;
+  }
+  p {
+    font-weight: 300;
+    font-size: 15px;
+    color: #434242;   
+  }
+  .details {
+    .attributes {
+      padding: 0.5em 0 0.2em 0;
+      .attribute-name-bold {
+        font-weight: 500;
+      }
+      p {
+        line-height: 0.8;
+      }    
+    }
+  }
+  .picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 270px;
+    .avatar {
+      width: 11em;
+      border-radius: 50%;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    }
+  }
 }
-.details p {
-  font-weight: 300;
-  line-height: 0.9;
-  padding-bottom: 10px;
+// Unflex for mobile
+#unflex-mobile {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
 }
-h3 {
-  font-weight: 300;
-  color: #22A39F;
+@media (max-width: 768px) {
+  #unflex-mobile {
+    display: inherit;
+  }
 }
 #italic {
   font-style: italic;
@@ -60,28 +77,6 @@ h3 {
   color: #22A39F;
 }
 
-// Flex
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.space-around {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-// Unflex for mobile
-#unflex-mobile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media (max-width: 768px) {
-  #unflex-mobile {
-    display: inherit;
-  }
-}
 @media (max-width: 768px) {
   .banner {
     background-image: none!important;

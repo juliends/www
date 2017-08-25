@@ -7,3 +7,14 @@
     padding: 0px;
   }
 }
+// Flexbox
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
