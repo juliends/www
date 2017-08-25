@@ -1,0 +1,9 @@
+// Paddings
+.padded {
+  padding: 40px 120px;
+}
+@media (max-width: 768px) {
+  .padded {
+    padding: 0px;
+  }
+}

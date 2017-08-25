@@ -60,15 +60,6 @@ h3 {
   color: #22A39F;
 }
 
-// Paddings
-.padded {
-  padding: 40px 120px;
-}
-@media (max-width: 768px) {
-  .padded {
-    padding: 0px;
-  }
-}
 // Flex
 .flex-center {
   display: flex;
