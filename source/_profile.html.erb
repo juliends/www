@@ -2,13 +2,13 @@
   <div class="container padded">
     <div class="row">
       <div class="col-xs-12">
-        <div class="centered-sentences">    
+        <div class="section_headers" id="1">    
           <h2>Profile</h2>
           <h6>I'm a creative Ruby on Rails developper </h6>
         </div>
       </div>
     </div>
-    <div class="row profile" id="1">
+    <div class="row profile" >
       <div class="col-xs-12 col-md-4">
         <div class="about-me">
           <h4>About me</h4>
@@ -23,18 +23,12 @@
       <div class="col-xs-12 col-md-3">
         <div class="unflex-mobile details">
           <h4>Details</h4>
-            <div class="attributes">
-              <p class="attribute-name-bold">Name:</p>
-              <p>Julien Da Silva</p>  
-            </div>
-            <div class="attributes">
-              <p class="attribute-name-bold">Age:</p>
-              <p>31</p>
-            </div>
-            <div class="attributes">
-              <p class="attribute-name-bold">Location:</p>
-              <p>Paris, France</p>
-            </div>
+            <% data.user.julien.each do |key, value| %>
+              <div class="attributes">
+                <p class="attribute-name-bold"><%= key %></p>
+                <p><%= value %></p>  
+              </div>
+            <% end %>
         </div>
       </div>
     </div>

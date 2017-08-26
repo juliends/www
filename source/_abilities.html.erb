@@ -1,0 +1,98 @@
+<div class="wrapper-grey">
+  <div class="container padded">
+    <div class="row">
+      <div class="section_headers">
+        <h2>Abilities</h2>
+        <h6>I love to emprove my skill belt</h6>
+      </div> 
+    </div>
+    <div class="abilities" id="2">
+      <h4>Back End</h4>
+        <div class="row">
+          <% data.skills.abilities.backend.each_with_index do |hash, index| %>
+            <% if index.even? %>
+              <div class='col-md-5'>
+            <% else %>
+              <div class='col-md-5 col-md-offset-2'>
+            <% end %>
+              <ul class="list-unstyled">
+                <% hash.each do |key, value| %>
+                  <li class="flex-space-between">
+                    <span class="ability-title"><%= key %></span>
+                    <div><%= content_tag("span","",class:"fa fa-star") * value.to_i %></div>  
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+        </div>
+      <hr>     
+      <h4>Front End</h4>
+        <div class="row">
+          <% data.skills.abilities.frontend.each_with_index do |hash, index| %>
+            <% if index.even? %>
+              <div class='col-md-5'>
+            <% else %>
+              <div class='col-md-5 col-md-offset-2'>
+            <% end %>
+              <ul class="list-unstyled">
+                <% hash.each do |key, value| %>
+                  <li class="flex-space-between">
+                    <span class="ability-title"><%= key %></span>
+                    <div><%= content_tag("span","",class:"fa fa-star") * value.to_i %></div> 
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+        </div>     
+      <div class="row">
+        <div class="flex-column-center">
+          <p id="italic">This project is build on a custom made Middleman framework.</p>
+          <%= link_to("See project on github", "https://github.com/juliends/www", class:"btn-transparent-green")  %>
+        </div>
+      </div>
+      <hr>
+      <h4>Tools</h4>
+        <div class="row">
+          <% data.skills.abilities.tools.each_with_index do |hash, index| %>
+            <% if index.even? %>
+              <div class='col-md-5'>
+            <% else %>
+              <div class='col-md-5 col-md-offset-2'>
+            <% end %>
+              <ul class="list-unstyled">
+                <% hash.each do |key, value| %>
+                  <li class="flex-space-between">
+                    <span class="ability-title"><%= key %></span>
+                    <div><%= content_tag("span","",class:"fa fa-star") * value.to_i %></div> 
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+        </div>     
+      <hr>
+      <h4>Languages</h4>
+        <div class="row">
+          <% data.skills.abilities.languages.each_with_index do |hash, index| %>
+            <% if index.even? %>
+              <div class='col-md-5'>
+            <% else %>
+              <div class='col-md-5 col-md-offset-2'>
+            <% end %>
+              <ul class="list-unstyled">
+                <% hash.each do |key, value| %>
+                  <li class="flex-space-between">
+                    <span class="ability-title"><%= key %></span>
+                    <div><%= content_tag("span","",class:"fa fa-star") * value.to_i %></div> 
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+        </div>     
+      <hr>
+    </div>
+  </div>
+</div>

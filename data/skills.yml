@@ -1,0 +1,53 @@
+{ abilities:
+  { 
+    backend:  
+    [
+      {
+        Ruby: 4,
+        Ruby On Rails: 4,
+        SQL: 3,
+        Heroku: 4
+      },
+      {
+        Bash: 3
+      }
+    ],
+    frontend:
+    [
+      {
+        HTML: 4,
+        SCSS: 4,
+        Flexbox: 4,
+        Bootstrap: 4
+      },
+      {
+        JQuery: 4,
+        Es6: 1,
+        React: 1,
+        Redux: 1
+      }
+    ],
+    tools:
+    [
+      {
+        Subime Text: 5,
+        Ubuntu: 4
+      },
+      {
+        Git: 3,
+        Github: 4
+      }
+    ],
+    languages:
+    [
+      {
+        French: 5,
+        English: 4
+      },
+      {
+        Spanish: 4,
+        Portuguese: 4
+      }
+    ]
+  }
+}

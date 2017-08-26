@@ -1,0 +1,23 @@
+.abilities {
+  span {
+  font-weight: 300;
+  font-size: 15px;
+  text-align: left;
+  color: #434242;
+  }
+  li {
+    padding: 3px 5px;
+  }
+  li:hover {
+    background-color: #e6e6e6;
+    .fa-star {
+      letter-spacing: 7px;
+    }
+  }
+  .fa-star {
+    color: $green;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    letter-spacing: 5px;
+  }
+}
