@@ -1,6 +1,15 @@
+a, a:hover, a:active, a:visited, a:focus {
+  text-decoration:none;
+}
 h4 {
   font-weight: 300;
   color: $green;
+}
+#italic {
+  font-style: italic;
+  color: $gray;
+  margin-top: 2em;
+  margin-bottom: 1;
 }
 // Wrappers
 .wrapper-grey {
@@ -29,5 +38,11 @@ h4 {
 .flex-space-around {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
