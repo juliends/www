@@ -2,13 +2,19 @@
   <div class="container padded">
     <div class="row">
       <div class="col-xs-12">
-        <div class="section_headers">    
+        <div class="section_headers" id="1">    
+        <% data.user.abilities.backend.each do |a, b| %>
+          <p><%= a %>=<%= b %></p>
+        <% end %>
+        <% data.user.abilities.frontend.each do |a, b| %>
+          <p><%= a %>=<%= b %></p>
+        <% end %>
           <h2>Profile</h2>
           <h6>I'm a creative Ruby on Rails developper </h6>
         </div>
       </div>
     </div>
-    <div class="row profile" id="1">
+    <div class="row profile" >
       <div class="col-xs-12 col-md-4">
         <div class="about-me">
           <h4>About me</h4>
