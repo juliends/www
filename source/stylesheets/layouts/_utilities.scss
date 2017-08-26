@@ -1,6 +1,10 @@
 h4 {
   font-weight: 300;
-  color: #22A39F;
+  color: $green;
+}
+// Wrappers
+.wrapper-grey {
+  background-color: rgba(50,50,50,0.04);
 }
 // Paddings
 .padded {

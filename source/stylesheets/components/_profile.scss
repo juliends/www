@@ -44,16 +44,9 @@
   margin-top: 50px;
   margin-bottom: 25px;
 }
-.wrapper-grey {
-  background-color: rgba(50,50,50,0.04);
+.fa-star {
+  color: $green;
 }
-.wrapper-white {
-  background-color: white;
-}
-.fa-star{
-  color: #22A39F;
-}
-
 @media (max-width: 768px) {
   .banner {
     background-image: none!important;
