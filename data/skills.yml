@@ -9,7 +9,6 @@
         Heroku: 4
       },
       {
-        Linux: 4,
         Bash: 3,
         React: 1,
         Redux: 1
@@ -26,6 +25,28 @@
       {
         JQuery: 4,
         Es6: 1
+      }
+    ],
+    tools:
+    [
+      {
+        Subime Text: 5,
+        Ubuntu: 4
+      },
+      {
+        Git: 3,
+        Github: 4
+      }
+    ],
+    languages:
+    [
+      {
+        French: 5,
+        English: 4
+      },
+      {
+        Spanish: 4,
+        Portuguese: 4
       }
     ]
   }

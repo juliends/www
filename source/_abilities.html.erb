@@ -53,60 +53,44 @@
       </div>
       <hr>
       <h4 class="category-name">Tools</h4>
-      <div class="row">
-        <div class="col-md-5">
-          <ul class="list-unstyled">
-            <li>
-              <span class="ability-title">Sublime text</span>
-              <%= content_tag("span","",class:"fa fa-star") * 5 %> 
-            </li>
-            <li>
-              <span class="ability-title">Github</span>
-              <%= content_tag("span","",class:"fa fa-star") * 5 %> 
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-5 col-md-offset-2">
-          <ul class="list-unstyled">
-            <li>
-              <span class="ability-title">Ticketing systems</span>
-              <%= content_tag("span","",class:"fa fa-star") * 4 %> 
-            </li>
-            <li>
-              <span class="ability-title">Trello</span>
-              <%= content_tag("span","",class:"fa fa-star") * 3 %> 
-            </li>
-          </ul>
-        </div>
-      </div>
+        <div class="row">
+          <% data.skills.abilities.tools.each_with_index do |hash, index| %>
+            <% if index.even? %>
+              <div class='col-md-5'>
+            <% else %>
+              <div class='col-md-5 col-md-offset-2'>
+            <% end %>
+              <ul class="list-unstyled">
+                <% hash.each do |key, value| %>
+                  <li>
+                    <span class="ability-title"><%= key %></span>
+                    <%= content_tag("span","",class:"fa fa-star") * value.to_i %> 
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+        </div>     
       <hr>
       <h4 class="category-name">Languages</h4>
-      <div class="row">
-        <div class="col-md-5">
-          <ul class="list-unstyled">
-            <li>
-              <span class="ability-title">French (native language) </span>
-              <%= content_tag("span","",class:"fa fa-star") * 5 %> 
-            </li>
-            <li>
-              <span class="ability-title">English (daily use)</span>
-              <%= content_tag("span","",class:"fa fa-star") * 5 %> 
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-5 col-md-offset-2">
-          <ul class="list-unstyled">
-            <li>
-              <span class="ability-title">Spanish (second mother language)</span>
-              <%= content_tag("span","",class:"fa fa-star") * 4 %> 
-            </li>
-            <li>
-              <span class="ability-title">Portuguese (father language)</span>
-              <%= content_tag("span","",class:"fa fa-star") * 3 %> 
-            </li>
-          </ul>
-        </div>
-      </div>
+        <div class="row">
+          <% data.skills.abilities.languages.each_with_index do |hash, index| %>
+            <% if index.even? %>
+              <div class='col-md-5'>
+            <% else %>
+              <div class='col-md-5 col-md-offset-2'>
+            <% end %>
+              <ul class="list-unstyled">
+                <% hash.each do |key, value| %>
+                  <li>
+                    <span class="ability-title"><%= key %></span>
+                    <%= content_tag("span","",class:"fa fa-star") * value.to_i %> 
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+        </div>     
       <hr>
     </div>
   </div>
