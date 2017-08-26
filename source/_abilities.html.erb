@@ -9,90 +9,42 @@
     <div class="abilities" id="2">
       <h4 class="category-name">Back End</h4>
         <div class="row">
-          <div class="col-md-5">
-            <ul class="list-unstyled">
-              <li>
-                <span class="ability-title">Ruby</span>
-                <%= content_tag("span","",class:"fa fa-star") * 4 %> 
-              </li>
-              <li>
-                <span class="ability-title">Ruby on Rails</span>
-                <%= content_tag("span","",class:"fa fa-star") * 4 %> 
-              </li>
-              <li>
-                <span class="ability-title">Heroku</span>
-                <%= content_tag("span","",class:"fa fa-star") * 3 %> 
-              </li>
-              <li>
-                <span class="ability-title">Linux</span>
-                <%= content_tag("span","",class:"fa fa-star") * 3 %> 
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-5 col-md-offset-2">
-            <ul class="list-unstyled">
-            <li>
-              <span class="ability-title">Postgre SQL</span>
-              <%= content_tag("span","",class:"fa fa-star") * 3 %> 
-            </li>
-            <li>
-              <span class="ability-title">Google Map API</span>
-              <%= content_tag("span","",class:"fa fa-star") * 3 %> 
-            </li>
-            <li>
-              <span class="ability-title">Stripe API</span>
-              <%= content_tag("span","",class:"fa fa-star") * 3 %> 
-            </li>
-            <li>
-              <span class="ability-title">Tyeform API</span>
-              <%= content_tag("span","",class:"fa fa-star") * 3 %> 
-            </li>
-            </ul>
-          </div>
-        </div>
+          <% data.skills.abilities.backend.each_with_index do |hash, index| %>
+            <% if index.even? %>
+              <div class='col-md-5'>
+            <% else %>
+              <div class='col-md-5 col-md-offset-2'>
+            <% end %>
+              <ul class="list-unstyled">
+                <% hash.each do |key, value| %>
+                  <li>
+                    <span class="ability-title"><%= key %></span>
+                    <%= content_tag("span","",class:"fa fa-star") * value.to_i %> 
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+        </div>     
       <h4 class="category-name">Front End</h4>
-      <div class="row">
-        <div class="col-md-5">
-          <ul class="list-unstyled">
-            <li>
-              <span class="ability-title">HTML</span>
-              <%= content_tag("span","",class:"fa fa-star") * 4 %> 
-            </li>
-            <li>
-              <span class="ability-title">SCSS</span>
-              <%= content_tag("span","",class:"fa fa-star") * 4 %> 
-            </li>
-            <li>
-              <span class="ability-title">JQuery</span>
-              <%= content_tag("span","",class:"fa fa-star") * 3 %> 
-            </li>
-            <li>
-              <span class="ability-title">Bootstrap</span>
-              <%= content_tag("span","",class:"fa fa-star") * 3 %> 
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-5 col-md-offset-2">
-          <ul class="list-unstyled">
-            <li>
-              <span class="ability-title">Flexbox</span>
-              <%= content_tag("span","",class:"fa fa-star") * 4 %> 
-            </li>
-            <li>
-              <span class="ability-title">Responsive Design</span>
-              <%= content_tag("span","",class:"fa fa-star") * 3 %> 
-            </li>
-            <li>
-              <span class="ability-title">React.js</span>
-              <%= content_tag("span","",class:"fa fa-star") * 1 %> 
-            </li>
-            <li>
-              <span class="ability-title">Redux</span>
-              <%= content_tag("span","",class:"fa fa-star") * 1 %> 
-            </li>
-          </ul>
-        </div>
-      </div>
+        <div class="row">
+          <% data.skills.abilities.frontend.each_with_index do |hash, index| %>
+            <% if index.even? %>
+              <div class='col-md-5'>
+            <% else %>
+              <div class='col-md-5 col-md-offset-2'>
+            <% end %>
+              <ul class="list-unstyled">
+                <% hash.each do |key, value| %>
+                  <li>
+                    <span class="ability-title"><%= key %></span>
+                    <%= content_tag("span","",class:"fa fa-star") * value.to_i %> 
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+        </div>     
       <div class="row">
         <div class="project-referal">
           <p id="italic">This project is build on a custom made Middleman framework.</p>

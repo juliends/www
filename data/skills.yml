@@ -1,18 +1,32 @@
 { abilities:
   { 
     backend:  
-    {
-      Ruby: 4,
-      Ruby On Rails: 4,
-      SQL: 3,
-      Heroku: 4,
-      Linux: 4,
-      Bash: 3
-    },
+    [
+      {
+        Ruby: 4,
+        Ruby On Rails: 4,
+        SQL: 3,
+        Heroku: 4
+      },
+      {
+        Linux: 4,
+        Bash: 3,
+        React: 1,
+        Redux: 1
+      }
+    ],
     frontend:
-    {
-      HTML: 4,
-      SCSS: 4
-    }
+    [
+      {
+        HTML: 4,
+        SCSS: 4,
+        Flexbox: 4,
+        Bootstrap: 4
+      },
+      {
+        JQuery: 4,
+        Es6: 1
+      }
+    ]
   }
 }

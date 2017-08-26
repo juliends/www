@@ -31,6 +31,7 @@
   .glyphicon-chevron-down, .fa-linkedin-square, .fa-github-square {
     color: $brand-color;
     &:hover {
+      opacity: 0.6;
       text-decoration: none;
     }
   }
