@@ -1,18 +1,7 @@
-{ abilities:
+{ julien:
   { 
-    backend:  
-    {
-      Ruby: 4,
-      Ruby On Rails: 4,
-      SQL: 3,
-      Heroku: 4,
-      Linux: 4,
-      Bash: 3
-    },
-    frontend:
-    {
-      HTML: 4,
-      SCSS: 4
-    }
+    Name: Julien Da Silva,
+    Age: 31,
+    Location: "Paris, France"
   }
 }
