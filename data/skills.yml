@@ -9,9 +9,7 @@
         Heroku: 4
       },
       {
-        Bash: 3,
-        React: 1,
-        Redux: 1
+        Bash: 3
       }
     ],
     frontend:
@@ -24,7 +22,9 @@
       },
       {
         JQuery: 4,
-        Es6: 1
+        Es6: 1,
+        React: 1,
+        Redux: 1
       }
     ],
     tools:

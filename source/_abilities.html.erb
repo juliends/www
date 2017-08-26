@@ -7,7 +7,7 @@
       </div> 
     </div>
     <div class="abilities" id="2">
-      <h4 class="category-name">Back End</h4>
+      <h4>Back End</h4>
         <div class="row">
           <% data.skills.abilities.backend.each_with_index do |hash, index| %>
             <% if index.even? %>
@@ -17,9 +17,9 @@
             <% end %>
               <ul class="list-unstyled">
                 <% hash.each do |key, value| %>
-                  <li>
+                  <li class="flex-space-between">
                     <span class="ability-title"><%= key %></span>
-                    <%= content_tag("span","",class:"fa fa-star") * value.to_i %> 
+                    <div><%= content_tag("span","",class:"fa fa-star") * value.to_i %></div>  
                   </li>
                 <% end %>
               </ul>
@@ -27,7 +27,7 @@
           <% end %>
         </div>
       <hr>     
-      <h4 class="category-name">Front End</h4>
+      <h4>Front End</h4>
         <div class="row">
           <% data.skills.abilities.frontend.each_with_index do |hash, index| %>
             <% if index.even? %>
@@ -37,9 +37,9 @@
             <% end %>
               <ul class="list-unstyled">
                 <% hash.each do |key, value| %>
-                  <li>
+                  <li class="flex-space-between">
                     <span class="ability-title"><%= key %></span>
-                    <%= content_tag("span","",class:"fa fa-star") * value.to_i %> 
+                    <div><%= content_tag("span","",class:"fa fa-star") * value.to_i %></div> 
                   </li>
                 <% end %>
               </ul>
@@ -53,7 +53,7 @@
         </div>
       </div>
       <hr>
-      <h4 class="category-name">Tools</h4>
+      <h4>Tools</h4>
         <div class="row">
           <% data.skills.abilities.tools.each_with_index do |hash, index| %>
             <% if index.even? %>
@@ -63,9 +63,9 @@
             <% end %>
               <ul class="list-unstyled">
                 <% hash.each do |key, value| %>
-                  <li>
+                  <li class="flex-space-between">
                     <span class="ability-title"><%= key %></span>
-                    <%= content_tag("span","",class:"fa fa-star") * value.to_i %> 
+                    <div><%= content_tag("span","",class:"fa fa-star") * value.to_i %></div> 
                   </li>
                 <% end %>
               </ul>
@@ -73,7 +73,7 @@
           <% end %>
         </div>     
       <hr>
-      <h4 class="category-name">Languages</h4>
+      <h4>Languages</h4>
         <div class="row">
           <% data.skills.abilities.languages.each_with_index do |hash, index| %>
             <% if index.even? %>
@@ -83,9 +83,9 @@
             <% end %>
               <ul class="list-unstyled">
                 <% hash.each do |key, value| %>
-                  <li>
+                  <li class="flex-space-between">
                     <span class="ability-title"><%= key %></span>
-                    <%= content_tag("span","",class:"fa fa-star") * value.to_i %> 
+                    <div><%= content_tag("span","",class:"fa fa-star") * value.to_i %></div> 
                   </li>
                 <% end %>
               </ul>
