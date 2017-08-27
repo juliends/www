@@ -1,0 +1,8 @@
+{ apps:
+  { 
+    name: Aulo,
+    client: Aulo,
+    position: Fullstack,
+    picture: aulo.png
+  }
+}

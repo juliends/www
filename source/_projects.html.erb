@@ -1,0 +1,28 @@
+<div class="wrapper-white">
+  <div class="container padded">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="section_headers">    
+          <h2>Projects</h2>
+          <p>You will find here some projects I have worked for</p>
+        </div>
+      </div>
+    </div>
+    <div class="projects padded" id="3">
+      <div class="row">
+        <% data.projects.apps.each do |project| %>
+          <% project %>
+        <% end %>
+        <div class="col-xs-12 col-sm-6">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(' https://www.aulo.io/assets/aulo_full_logo_metatag-95abd3de7c9aa5a34570e2843ea3fba89459232ce08e09590de9538cec953e94.png');">
+            <div class="card-description">
+              <h2>Aulo</h2>
+              <p>Parle à tes experts favoris en live vidéo sur Aulo</p>
+            </div>
+            <%= link_to "", "https://www.aulo.io/", class: 'card-link' %>
+          </div>       
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
