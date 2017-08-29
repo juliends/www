@@ -2,8 +2,8 @@ $(document).ready(function() {
 
   // Navbar fadeIn/Out
   $(window).scroll(function() {
-    if ($(this).scrollTop() + 2 >= $('.profile').offset().top) {
-      $('.navbar').fadeIn();
+    if ($(this).scrollTop() >= $('#navbar-appear-point').offset().top - 100) {
+      $('.navbar').fadeIn(1000);
       $('.navbar').removeClass("hidden");
       }
     else  

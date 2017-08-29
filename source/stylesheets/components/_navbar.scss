@@ -1,15 +1,16 @@
 .navbar {
-  width: 100px;
-  float: right;
+  width: 100vw;
+  height: 3vh;
+  // float: right;
   position: fixed;
-  right: 10vh;
-  top: 6vh;
+  // right: 10vh;
+  // top: 6vh;
   z-index: 10;
 }
 .navbar li {
-  background-color: black;
-  height: 70px;
-  position: relative;
+  // background-color: black;
+  // height: 10vh;
+  // position: relative;
 }
 .navbar a {
   display: flex;
@@ -30,7 +31,7 @@
   color: rgba(255,255,255,0.7);
 }
 .active-nav {
-  background-color: #22A39F;
+  background-color: #2A557D;
   &:hover {
     color: white!important;
   }
