@@ -1,37 +1,26 @@
 .navbar {
   width: 100vw;
-  height: 3vh;
-  // float: right;
+  height: 4vh;
+  min-height: 35px !important;
+  background-color: #1B3B6F;
+  // #032B43, #1B3B6F, #1A535C
   position: fixed;
-  // right: 10vh;
-  // top: 6vh;
-  z-index: 10;
-}
-.navbar li {
-  // background-color: black;
-  // height: 10vh;
-  // position: relative;
+  z-index: 1;
+  ul {
+    height: 100%;
+  }
 }
 .navbar a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: white;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 15px;
   text-decoration: none;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
   transition: 0.2s ease;
 }
 .navbar a:hover {
   color: rgba(255,255,255,0.7);
 }
 .active-nav {
-  background-color: #2A557D;
   &:hover {
     color: white!important;
   }
