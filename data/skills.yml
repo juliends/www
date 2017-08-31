@@ -21,7 +21,7 @@
         Bootstrap: 4
       },
       {
-        JQuery: 4,
+        Jquery: 4,
         Es6: 1,
         React: 1,
         Redux: 1
